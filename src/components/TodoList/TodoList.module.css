@@ -1,0 +1,13 @@
+.delete {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.text {
+  background-color: #8cd7e8;
+}

@@ -18,7 +18,6 @@ class Dropdown extends Component {
           className="btn btn-secondary dropdown-toggle"
           type="button"
           onClick={this.toogle}
-          onMouseOver={this.toogle}
         >
           {this.state.visible ? 'Close' : 'Open'}{' '}
         </button>

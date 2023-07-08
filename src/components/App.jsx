@@ -8,6 +8,7 @@ import TodoList from './TodoList/TodoList.jsx';
 import Form from './Form';
 import TodoEdit from './TodoEdit';
 import Filter from './TodoList/Filter.jsx';
+import LoginForm from './LoginForm';
 //import user from 'data/user.json';
 import shortid from 'shortid';
 import data from 'data/data.json';
@@ -84,6 +85,7 @@ export class App extends Component {
     const calculateComplateCounte = this.calculateCompleteTodo();
     return (
       <>
+        <LoginForm />
         <Form onSubmitForm={this.onSubmitForm} />
         <TodoEdit text={this.addTodo} />
         <Filter value={filter} onChangeFilter={this.onChangeFilter} />

@@ -39,7 +39,7 @@ const LoginForm = () => {
         <Field type="text" name="login" />
         <ErrorMessage component={'div'} name="login" />
 
-        <label>Password</label>
+        <label>My Password</label>
         <Field type="password" name="password" />
         <FormError name="password" />
 

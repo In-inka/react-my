@@ -16,21 +16,23 @@ import friends from 'data/friends.json';
 import transactions from 'data/transactions.json';
 import color_picker from 'data/color_picker.json';
 import { Component } from 'react';
+import initialTodos from 'data/initialTodos.json';
 
 export class App extends Component {
   state = {
-    todos: [
-      { id: 'id-1', text: 'Todo1', completed: false },
-      { id: 'id-2', text: 'Todo2', completed: false },
-      { id: 'id-3', text: 'Todo3', completed: false },
-    ],
+    todos: initialTodos,
     filter: ' ',
   };
+
   addTodo = text => {
-    const todo = { id: shortid.generate(), text, completed: false };
+    const todo = {
+      id: shortid.generate(),
+      text,
+      completed: false,
+    };
 
     this.setState(({ todos }) => ({
-      todos: [todo, ...todos.todos],
+      todos: [todo, ...todos],
     }));
   };
 
@@ -78,7 +80,18 @@ export class App extends Component {
       0
     );
   };
+
+  componentDidMount() {
+    console.log('componentDidMount');
+  }
+  componentDidUpdate() {
+    console.log('componentDidUpdate');
+  }
+  componentWillUnmount() {
+    console.log('componentDidUpdate');
+  }
   render() {
+    console.log('app');
     const { filter } = this.state;
 
     const visibleTodos = this.getvisibleTodos();

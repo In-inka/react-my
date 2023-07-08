@@ -14,15 +14,13 @@ class TodoEdit extends Component {
 
   onSubmit = e => {
     e.preventDefault();
+    console.log(this.props);
     this.props.text(this.state.message);
-    this.reset();
-  };
-
-  reset = () => {
     this.setState({
       message: ' ',
     });
   };
+
   render() {
     return (
       <form className={css.todoEdit} onSubmit={this.onSubmit}>

@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: #e0dddd;
+  background-color: #c6f2f7;
 }
 h1,
 h2,
@@ -12,12 +12,7 @@ h6,
 p {
   margin: 0;
 }
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 img {
   display: block;
   max-width: 100%;

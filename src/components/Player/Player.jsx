@@ -1,11 +1,7 @@
 import { Component } from 'react';
 import { PlayerWrapper, StyledPlayer } from './Player.styled.jsx';
 
-import ReactLoading from 'react-loading';
-
-const Example = () => (
-  <ReactLoading type={'bubbles'} color={'blue'} height={100} width={90} />
-);
+import Example from './Example.jsx';
 
 class Player extends Component {
   state = {

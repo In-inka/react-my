@@ -26,7 +26,7 @@ class ColorPicker extends Component {
     const { color } = option[activeIndex];
     return (
       <div className={css.ColorPicker}>
-        <h2 className={css.ColorPickerTitle}>Color Picker</h2>
+        <h2 className={css.ColorPickerTitle}>My Color Picker</h2>
         <p className={css.ColorPickerText}>
           Color: <span style={{ color: color }}>{label}</span>
         </p>
